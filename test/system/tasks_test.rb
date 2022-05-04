@@ -10,35 +10,37 @@ class TasksTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Tasks"
   end
 
-  test "should create task" do
+  test "creating a Task" do
     visit tasks_url
-    click_on "New task"
+    click_on "New Task"
 
     fill_in "Description", with: @task.description
-    check "Done" if @task.done
-    fill_in "Due date", with: @task.due_date
+    fill_in "Done", with: @task.done
+    fill_in "Due Date", with: @task.due_date
     click_on "Create Task"
 
     assert_text "Task was successfully created"
     click_on "Back"
   end
 
-  test "should update Task" do
-    visit task_url(@task)
-    click_on "Edit this task", match: :first
+  test "updating a Task" do
+    visit tasks_url
+    click_on "Edit", match: :first
 
     fill_in "Description", with: @task.description
-    check "Done" if @task.done
-    fill_in "Due date", with: @task.due_date
+    fill_in "Done", with: @task.done
+    fill_in "Due Date", with: @task.due_date
     click_on "Update Task"
 
     assert_text "Task was successfully updated"
     click_on "Back"
   end
 
-  test "should destroy Task" do
-    visit task_url(@task)
-    click_on "Destroy this task", match: :first
+  test "destroying a Task" do
+    visit tasks_url
+    page.accept_confirm do
+      click_on "Destroy", match: :first
+    end
 
     assert_text "Task was successfully destroyed"
   end
