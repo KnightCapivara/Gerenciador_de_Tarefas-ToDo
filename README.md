@@ -1,6 +1,15 @@
-# Gerenciador de Tarefas-ToDo
+# CPLC - ToDo
 
-    Desenvolvimento de um projeto rails - ToDo. Modulo 12
+Applicação desenvolvida no [Curso de Programação Ruby on Rails 6](https://www.lucascaton.com.br/cursos/cplc/).
 
-att: crir e corrigir bando de dados na aplicação.
+### Documentações utilizadas nas vídeo-aulas
+
+* [Rubocop](https://github.com/rubocop-hq/rubocop) - Analisador/formatador de estilo de código
+
+* Documentação oficial do **Rails**:
+  * [Validações](https://guides.rubyonrails.org/active_record_validations.html)
+  * [Migrations](https://guides.rubyonrails.org/active_record_migrations.html)
+  * [Credentials](https://guides.rubyonrails.org/security.html#custom-credentials)
+
+
 Mentores: Lucas e Mauricio.
