@@ -12,4 +12,4 @@ Applicação desenvolvida no Curso de Programação Ruby on Rails 6.
   * [Credentials](https://guides.rubyonrails.org/security.html#custom-credentials)
 
 
-Mentores: Lucas e Mauricio.
+Curso de Ruby on Rails 6 - Lucas Caton
